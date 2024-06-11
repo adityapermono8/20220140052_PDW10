@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valorant Tournament Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Valorant Tournament Registration</h3>
+        </div>
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Your name" id="name"><br><br>
+            <label for="username">Valorant Username</label><br>
+            <input type="text" placeholder="Your Valorant username" id="username"><br><br>
+            <label for="rank">Rank</label><br>
+            <select id="rank" name="rank">
+                <option value="iron">Iron</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="platinum">Platinum</option>
+                <option value="diamond">Diamond</option>
+                <option value="immortal">Immortal</option>
+                <option value="radiant">Radiant</option>
+            </select><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Your email address" id="email"><br><br>
+            <label for="team">Team Name</label><br>
+            <input type="text" placeholder="Your team name" id="team"><br><br>
+            <label for="role">Role</label><br>
+            <input type="radio" id="duelist" name="role" value="Duelist">
+            <label for="duelist">Duelist</label><br>
+            <input type="radio" id="initiator" name="role" value="Initiator">
+            <label for="initiator">Initiator</label><br>
+            <input type="radio" id="sentinel" name="role" value="Sentinel">
+            <label for="sentinel">Sentinel</label><br>
+            <input type="radio" id="controller" name="role" value="Controller">
+            <label for="controller">Controller</label><br><br>
+            <label for="date">Date of Birth</label><br>
+            <input type="date" id="date"><br><br>
+            <button type="button" onclick="submitData()">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
